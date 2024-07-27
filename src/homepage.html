@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar with Logo</title>
+    <style>
+        /* Reset default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333; /* Background color for the navbar */
+            padding: 10px 20px; /* Padding for the navbar */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .logo-text {
+            color: white; /* Text color */
+            font-size: 24px; /* Font size for the text */
+            margin-left: 10px; /* Spacing between the logo and text */
+            font-weight: bold; /* Optional: Make the text bold */
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            
+        }
+
+        .nav-links li {
+            margin-left: 80px; /* Spacing between nav items */
+        }
+
+        .nav-links a {
+            color: white; /* Text color for nav links */
+            text-decoration: none; /* Remove underline from links */
+            font-size: 16px; /* Font size for nav links */
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="image/EXPENZ.png" alt="Logo"></a>
+                <a href="/"> <span class="logo-text">ExpenZ</span></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="news.html"><i class="fas fa-dollar-sign"></i>News</a></li>
+                <li><a href="#blog"><i class="fas fa-pencil-alt"></i> Blog</a></li>
+                <li><a href="#courses"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="content">
+        <section id="form-section">
+            <h1>Enter Your Financial Data</h1>
+            <form id="finance-form">
+                <label for="month">Month:</label>
+                <input type="text" id="month" name="month" required>
+                <br>
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="income" required>
+                <br>
+                <label for="expense">Expense:</label>
+                <input type="number" id="expense" name="expense" required>
+                <br>
+                <button type="submit">Add Data</button>
+            </form>
+        </section>
+        <section id="graph-section">
+            <h1>Finance Overview</h1>
+            <canvas id="finance-chart"></canvas>
+        </section>
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>
