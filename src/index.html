@@ -6,11 +6,24 @@
     <link rel="icon" href="image/EXPENZ.png" type="image/x-icon">
     <link href="output.css" rel="stylesheet">
     <title>ExpenZ</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+    </style>
 </head>
-<body class="bg-black flex flex-col items-center justify-center min-h-screen">
+<body class="bg-black flex flex-col items-center justify-center min-h-screen " >
+    <div class="absolute top-14 right-4 text-white text-right z-10">
+        <p class="text-2xl italic fade-in">"Money moves from those who do not manage it </p>
+        <p class="text-2xl italic fade-in">to those WHO DO!</p>
+    </div>
     <div class="text-center">
         <img src="image/EXPENZ.png" class="mb-0">
-        <button class="text-customColor font-bold border-2 border-customColor px-4 py-2 rounded-md hover:bg-customColor hover:text-black transition duration-300 ">SET BUDGET</button>
+        <a href="homepage.html"><button class="text-customColor font-bold border-2 border-customColor px-4 py-2 rounded-md hover:bg-customColor hover:text-black transition duration-300 ">SET BUDGET</button></a>
     </div>
     <script src="script.js"></script>
 </body>
