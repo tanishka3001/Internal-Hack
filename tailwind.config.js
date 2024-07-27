@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         customColor: '#DAA520',
+        grey: '#171817',
       },
     },
   },
